@@ -9,11 +9,19 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    class_Charts/chart_base.cpp \
+    class_Charts/chart_diamond.cpp \
+    class_Charts/chart_ellipse.cpp \
+    class_Charts/chart_label.cpp \
     flowchart.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    class_Charts/chart_base.h \
+    class_Charts/chart_diamond.h \
+    class_Charts/chart_ellipse.h \
+    class_Charts/chart_label.h \
     flowchart.h \
     mainwindow.h
 
