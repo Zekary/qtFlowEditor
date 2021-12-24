@@ -13,6 +13,11 @@ SOURCES += \
     class_Charts/chart_diamond.cpp \
     class_Charts/chart_ellipse.cpp \
     class_Charts/chart_label.cpp \
+    class_Charts/chart_line.cpp \
+    class_Charts/class_plaintext.cpp \
+    class_Charts/class_rect.cpp \
+    class_Charts/class_roundrect.cpp \
+    class_Charts/class_trapezoid.cpp \
     flowchart.cpp \
     main.cpp \
     mainwindow.cpp
@@ -22,6 +27,11 @@ HEADERS += \
     class_Charts/chart_diamond.h \
     class_Charts/chart_ellipse.h \
     class_Charts/chart_label.h \
+    class_Charts/chart_line.h \
+    class_Charts/class_plaintext.h \
+    class_Charts/class_rect.h \
+    class_Charts/class_roundrect.h \
+    class_Charts/class_trapezoid.h \
     flowchart.h \
     mainwindow.h
 
