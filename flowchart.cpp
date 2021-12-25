@@ -122,6 +122,10 @@ void FlowChart::setPaintChart()
         {
             curPaintChart = new Chart_Trapezoid(this);
         }break;
+        case PaintChartType::TRIANGLE:
+        {
+            curPaintChart = new Chart_Triangle(this);
+        }break;
         default:case PaintChartType::NONE:{
             curPaintChart = nullptr;
         }break;
@@ -424,6 +428,10 @@ bool FlowChart::loadFile(QString filePath)
             case PaintChartType::TRAPEZOID:
             {
                 cb = new Chart_Trapezoid(this);
+            }break;
+            case PaintChartType::TRIANGLE:
+            {
+                cb = new Chart_Triangle(this);
             }break;
             default:case PaintChartType::NONE:{
                 cb = nullptr;

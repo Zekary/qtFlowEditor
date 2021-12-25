@@ -60,50 +60,6 @@
            <string>UML常用图形</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
-           <item row="0" column="0">
-            <widget class="QPushButton" name="chart_ellipse">
-             <property name="minimumSize">
-              <size>
-               <width>34</width>
-               <height>34</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>34</width>
-               <height>34</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/img/Round.png);</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QPushButton" name="chart_roundrect">
-             <property name="minimumSize">
-              <size>
-               <width>34</width>
-               <height>34</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>34</width>
-               <height>34</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/img/Rounded_Rectangle.png);</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
            <item row="2" column="1">
             <widget class="QPushButton" name="chart_rect">
              <property name="minimumSize">
@@ -120,28 +76,6 @@
              </property>
              <property name="styleSheet">
               <string notr="true">background-image: url(:/img/rectangle.png);</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QPushButton" name="chart_trapezoid">
-             <property name="minimumSize">
-              <size>
-               <width>34</width>
-               <height>34</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>34</width>
-               <height>34</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/img/trapezoid.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -170,6 +104,50 @@
              </property>
             </widget>
            </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="chart_ellipse">
+             <property name="minimumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/img/Round.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="chart_trapezoid">
+             <property name="minimumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/img/trapezoid.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
            <item row="0" column="1">
             <widget class="QPushButton" name="chart_diam">
              <property name="minimumSize">
@@ -186,6 +164,50 @@
              </property>
              <property name="styleSheet">
               <string notr="true">background-image: url(:/img/diamond.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="chart_roundrect">
+             <property name="minimumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/img/Rounded_Rectangle.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="chart_triangle">
+             <property name="minimumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>34</width>
+               <height>34</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/img/triangle.png);</string>
              </property>
              <property name="text">
               <string/>

@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->chart_ellipse,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_Ellipse()));
     connect(ui->chart_line,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_Line()));
     connect(ui->chart_trapezoid,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_trapezoid()));
+    connect(ui->chart_triangle,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_triangle()));  //添加一个点击三角形的信号
 
     connect(ui->actionOpenFile,SIGNAL(triggered(bool)),ui->flowChart_widget,SLOT(openChartFile()));
     connect(ui->actionSaveFile,SIGNAL(triggered(bool)),ui->flowChart_widget,SLOT(saveChartFile()));
@@ -120,7 +121,7 @@ void MainWindow::sendSelChartLineColor()
     ).arg(color.red()).arg(color.green()).arg(color.blue()));
 }
 
-//
+//填充的颜色
 void MainWindow::sendSelChartFillColor()
 {
     QColor color = QColorDialog::getColor(Qt::white,this,tr("设置填充颜色"));

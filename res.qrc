@@ -16,5 +16,6 @@
         <file>img/Rounded_Rectangle.png</file>
         <file>img/settings.png</file>
         <file>img/trapezoid.png</file>
+        <file>img/triangle.png</file>
     </qresource>
 </RCC>

@@ -18,6 +18,7 @@ SOURCES += \
     class_Charts/chart_rect.cpp \
     class_Charts/chart_roundrect.cpp \
     class_Charts/chart_trapezoid.cpp \
+    class_Charts/chart_triangle.cpp \
     flowchart.cpp \
     main.cpp \
     mainwindow.cpp
@@ -32,6 +33,7 @@ HEADERS += \
     class_Charts/chart_rect.h \
     class_Charts/chart_roundrect.h \
     class_Charts/chart_trapezoid.h \
+    class_Charts/chart_triangle.h \
     comdef.h \
     flowchart.h \
     mainwindow.h

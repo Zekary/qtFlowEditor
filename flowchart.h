@@ -25,6 +25,7 @@
 #include "class_Charts/chart_ellipse.h"
 #include "class_Charts/chart_line.h"
 #include "class_Charts/chart_trapezoid.h"
+#include "class_Charts/chart_triangle.h"
 
 #include "comdef.h"
 
@@ -137,6 +138,7 @@ public slots:
     void setPaintChart_Ellipse(){curPaintChartType = PaintChartType::ELLIPSE;setPaintChart();}          // 获取一个新的圆形
     void setPaintChart_Line(){curPaintChartType = PaintChartType::LINE;setPaintChart();}                // 获取一个新的线段
     void setPaintChart_trapezoid(){curPaintChartType = PaintChartType::TRAPEZOID;setPaintChart();}      // 获取一个新的梯形
+    void setPaintChart_triangle(){curPaintChartType = PaintChartType::TRIANGLE;setPaintChart();}        // 获取一个新的三角形
     void resetPaintChartType(){curPaintChartType = PaintChartType::NONE;}                               // 清空类型
 
 
