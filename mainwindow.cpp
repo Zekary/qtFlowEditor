@@ -37,12 +37,15 @@ MainWindow::MainWindow(QWidget *parent) :
     //ui->flowChart_widget->update();
 }
 
+//新打开一个页面
 MainWindow::~MainWindow()
 {
     ui->flowChart_widget->newChartFile();
     delete ui;
 }
 
+
+//设定填充颜色
 void MainWindow::setFillStyle(QPen &qp, QBrush &qb)
 {
     ui->FillColorGroup->setEnabled(true);
@@ -64,6 +67,8 @@ void MainWindow::setFillStyle(QPen &qp, QBrush &qb)
 
 }
 
+
+//设置线条颜色
 void MainWindow::setLineStyle(QPen &qp,LINE_HEAD_TYPE &startLineHeadType, LINE_HEAD_TYPE &endLineHeadTypeb)
 {
     ui->LineColorGroup->setEnabled(true);
@@ -85,6 +90,7 @@ void MainWindow::setLineStyle(QPen &qp,LINE_HEAD_TYPE &startLineHeadType, LINE_H
     ui->LineEndStyleCBox->setCurrentIndex(int(endLineHeadTypeb));
 }
 
+//让样式选择的选项不可选
 void MainWindow::disableStylePanel()
 {
     ui->FillColorGroup->setEnabled(false);
@@ -102,6 +108,7 @@ void MainWindow::disableStylePanel()
     };"));
 }
 
+//
 void MainWindow::sendSelChartLineColor()
 {
     QColor color = QColorDialog::getColor(Qt::white,this,tr("设置线条颜色"));
@@ -114,6 +121,7 @@ void MainWindow::sendSelChartLineColor()
     ).arg(color.red()).arg(color.green()).arg(color.blue()));
 }
 
+//
 void MainWindow::sendSelChartFillColor()
 {
     QColor color = QColorDialog::getColor(Qt::white,this,tr("设置填充颜色"));
@@ -125,6 +133,8 @@ void MainWindow::sendSelChartFillColor()
     };"
     ).arg(color.red()).arg(color.green()).arg(color.blue()));
 }
+
+//对表题进行修改
 void MainWindow::changeWindowTitle(const QString & title)
 {
     QString tmp = QString("流程图 - %1").arg(title);
