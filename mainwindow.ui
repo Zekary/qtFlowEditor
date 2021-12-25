@@ -11,11 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>比图吧 - Untitle</string>
-  </property>
-  <property name="windowIcon">
-   <iconset resource="res.qrc">
-    <normaloff>:/img/MainIco.png</normaloff>:/img/MainIco.png</iconset>
+   <string>20194140121唐政康</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -41,8 +37,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>134</width>
-         <height>887</height>
+         <width>148</width>
+         <height>718</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -61,7 +57,7 @@
            </size>
           </property>
           <property name="title">
-           <string>基础图形</string>
+           <string>UML常用图形</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
@@ -197,32 +193,6 @@
             </widget>
            </item>
           </layout>
-         </widget>
-        </item>
-        <item>
-         <widget class="QGroupBox" name="groupBox_2">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>200</height>
-           </size>
-          </property>
-          <property name="title">
-           <string>UML通用</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QGroupBox" name="groupBox_3">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>500</height>
-           </size>
-          </property>
-          <property name="title">
-           <string>UML用例图</string>
-          </property>
          </widget>
         </item>
        </layout>

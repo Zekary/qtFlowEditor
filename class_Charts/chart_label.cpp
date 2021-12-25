@@ -16,7 +16,7 @@ void Chart_Label::mousePressEvent(QMouseEvent *event)
 void Chart_Label::mouseDoubleClickEvent(QMouseEvent *event)
 {
     changeText();
-    qDebug()<<"999";
+//    qDebug()<<"999";
     event->ignore();
 }
 void Chart_Label::mouseMoveEvent(QMouseEvent *event)

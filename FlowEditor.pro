@@ -18,7 +18,6 @@ SOURCES += \
     class_Charts/chart_rect.cpp \
     class_Charts/chart_roundrect.cpp \
     class_Charts/chart_trapezoid.cpp \
-    comdef.cpp \
     flowchart.cpp \
     main.cpp \
     mainwindow.cpp

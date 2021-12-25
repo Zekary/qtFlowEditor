@@ -29,7 +29,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->flowChart_widget,SIGNAL(updateWindowTitle(const QString &)),this,SLOT(changeWindowTitle(const QString &)));
 
     //connect(ui->actionCloseFile,SIGNAL(triggered(bool)),ui->flowChart_widget,SLOT(saveChartFile()));
-
     //ui->abcdef->setGeometryNew(10,10,200,200);
     //ui->abcdef->update();
     //ui->flowChart_widget->setStyleSheet(QStringLiteral("background-color: rgb(206, 232, 255);"));
@@ -134,7 +133,7 @@ void MainWindow::sendSelChartFillColor()
     ).arg(color.red()).arg(color.green()).arg(color.blue()));
 }
 
-//对表题进行修改
+//对标题进行修改
 void MainWindow::changeWindowTitle(const QString & title)
 {
     QString tmp = QString("流程图 - %1").arg(title);

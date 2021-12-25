@@ -156,9 +156,9 @@ bool FlowChart::openChartFile()
 {
     if(!fileIsSaved)
     {
-        QMessageBox tmp(QMessageBox::Warning,tr("警告！"),tr("不保存文件就关闭？"),QMessageBox::NoButton,this->parentWidget());
+        QMessageBox tmp(QMessageBox::Warning,tr("警告！"),tr("文件未有保存"),QMessageBox::NoButton,this->parentWidget());
         QPushButton *saveclose = tmp.addButton(tr("保存并关闭"),QMessageBox::ActionRole);
-        QPushButton *nosaveclose = tmp.addButton(tr("不保存关闭"),QMessageBox::AcceptRole);
+        QPushButton *nosaveclose = tmp.addButton(tr("关闭"),QMessageBox::AcceptRole);
         QPushButton *cancel = tmp.addButton(tr("取消"),QMessageBox::RejectRole);
         tmp.exec();
         if(tmp.clickedButton() == saveclose)
@@ -180,7 +180,7 @@ bool FlowChart::openChartFile()
         }
     }
     resetFlowChartPanel();
-    QString tmpFilePath = QFileDialog::getOpenFileName(this,tr("打开文件"),"F:",tr("FCT文件(*.fct)"));
+    QString tmpFilePath = QFileDialog::getOpenFileName(this,tr("打开文件"),"/",tr("FCT文件(*.fct)"));
     if(tmpFilePath == "") return false;
 
     if(loadFile(tmpFilePath) == false)
@@ -236,7 +236,7 @@ bool FlowChart::newChartFile()
 {
     if(!fileIsSaved)
     {
-        QMessageBox tmp(QMessageBox::Warning,tr("警告！"),tr("不保存文件就关闭？"),QMessageBox::NoButton,this->parentWidget());
+        QMessageBox tmp(QMessageBox::Warning,tr("警告！"),tr("当前文件未保存"),QMessageBox::NoButton,this->parentWidget());
         QPushButton *saveclose = tmp.addButton(tr("保存并关闭"),QMessageBox::ActionRole);
         QPushButton *nosaveclose = tmp.addButton(tr("不保存关闭"),QMessageBox::AcceptRole);
         QPushButton *cancel = tmp.addButton(tr("取消"),QMessageBox::RejectRole);
