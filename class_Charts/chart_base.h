@@ -36,7 +36,6 @@ class Chart_Base :public QWidget
     Q_OBJECT
     friend class FlowChart;
 private:
-
     static int magPointWidth;                   // Padding信息-磁力点宽度
     static int sizePointWidth;                  // Padding信息-大小点宽度
     static int magPointWidth1_2;                // Padding信息-磁力点一半宽度

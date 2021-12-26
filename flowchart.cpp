@@ -294,32 +294,33 @@ bool FlowChart::delChart(Chart_Base *&cb)
             Chart_Base *tmp = cb;
             cb = nullptr;
             charts.erase(it);
-#if 1
-            for(auto magit = tmp->magPoint.i_point.begin();magit!=tmp->magPoint.i_point.end();magit++)
-            {
-                for(auto magLineStIt = (*magit)->i_lineStart.begin();magLineStIt != (*magit)->i_lineStart.end();magLineStIt++)
-                {
-                    dynamic_cast<Chart_Line*>(*magLineStIt) ->resetEndChart();
-                    if(!delLine(*magLineStIt))
-                    {
-                        qDebug()<<"Error";
-                    }else{
-                        qDebug()<<"Succeed.";
-                    }
-                }
-                for(auto magLineEnIt = (*magit)->i_lineEnd.begin();magLineEnIt != (*magit)->i_lineEnd.end();magLineEnIt++)
-                {
-                    dynamic_cast<Chart_Line*>(*magLineEnIt) ->resetStartChart();
-                    if(!delLine(*magLineEnIt))
-                    {
-                        qDebug()<<"Error";
-                    }else{
-                        qDebug()<<"Succeed.";
-                    }
-                }
-            }
-#endif
-            delete[] tmp;
+            delete tmp;
+//#if 1
+//            for(auto magit = tmp->magPoint.i_point.begin();magit!=tmp->magPoint.i_point.end();magit++)
+//            {
+//                for(auto magLineStIt = (*magit)->i_lineStart.begin();magLineStIt != (*magit)->i_lineStart.end();magLineStIt++)
+//                {
+//                    dynamic_cast<Chart_Line*>(*magLineStIt) ->resetEndChart();
+//                    if(!delLine(*magLineStIt))
+//                    {
+//                        qDebug()<<"Error";
+//                    }else{
+//                        qDebug()<<"Succeed.";
+//                    }
+//                }
+//                for(auto magLineEnIt = (*magit)->i_lineEnd.begin();magLineEnIt != (*magit)->i_lineEnd.end();magLineEnIt++)
+//                {
+//                    dynamic_cast<Chart_Line*>(*magLineEnIt) ->resetStartChart();
+//                    if(!delLine(*magLineEnIt))
+//                    {
+//                        qDebug()<<"Error";
+//                    }else{
+//                        qDebug()<<"Succeed.";
+//                    }
+//                }
+//            }
+//#endif
+//            delete[] tmp;
 
             return true;
         }
