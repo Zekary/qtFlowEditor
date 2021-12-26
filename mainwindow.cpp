@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->chart_triangle,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_triangle()));  //添加一个三角形的信号
     connect(ui->chart_parall,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_parall()));  //添加一个平行四边形的信号
     connect(ui->chart_user,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_user()));//添加一个用户的图案
+    connect(ui->chart_hexagon,SIGNAL(clicked()),ui->flowChart_widget,SLOT(setPaintChart_hexagon()));
 
     connect(ui->actionOpenFile,SIGNAL(triggered(bool)),ui->flowChart_widget,SLOT(openChartFile()));
     connect(ui->actionSaveFile,SIGNAL(triggered(bool)),ui->flowChart_widget,SLOT(saveChartFile()));

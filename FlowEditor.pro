@@ -12,6 +12,7 @@ SOURCES += \
     class_Charts/chart_base.cpp \
     class_Charts/chart_diamond.cpp \
     class_Charts/chart_ellipse.cpp \
+    class_Charts/chart_hexagon.cpp \
     class_Charts/chart_label.cpp \
     class_Charts/chart_line.cpp \
     class_Charts/chart_parall.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     class_Charts/chart_base.h \
     class_Charts/chart_diamond.h \
     class_Charts/chart_ellipse.h \
+    class_Charts/chart_hexagon.h \
     class_Charts/chart_label.h \
     class_Charts/chart_line.h \
     class_Charts/chart_parall.h \

@@ -134,6 +134,10 @@ void FlowChart::setPaintChart()
         {
             curPaintChart = new Chart_User(this);
         }break;
+        case PaintChartType::HEXAGON:
+        {
+            curPaintChart = new Chart_Hexagon(this);
+        }break;
         default:case PaintChartType::NONE:{
             curPaintChart = nullptr;
         }break;
@@ -449,6 +453,10 @@ bool FlowChart::loadFile(QString filePath)
             case PaintChartType::USER:
             {
                 cb = new Chart_User(this);
+            }break;
+            case PaintChartType::HEXAGON:
+            {
+             cb = new Chart_Hexagon(this);
             }break;
             default:case PaintChartType::NONE:{
                 cb = nullptr;

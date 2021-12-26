@@ -19,5 +19,6 @@
         <file>img/triangle.png</file>
         <file>img/user.png</file>
         <file>img/parall.png</file>
+        <file>img/hexagon.png</file>
     </qresource>
 </RCC>
