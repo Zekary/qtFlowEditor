@@ -126,6 +126,14 @@ void FlowChart::setPaintChart()
         {
             curPaintChart = new Chart_Triangle(this);
         }break;
+        case PaintChartType::PARALL:
+        {
+            curPaintChart = new Chart_Parall(this);
+        }break;
+        case PaintChartType::USER:
+        {
+            curPaintChart = new Chart_User(this);
+        }break;
         default:case PaintChartType::NONE:{
             curPaintChart = nullptr;
         }break;
@@ -433,6 +441,14 @@ bool FlowChart::loadFile(QString filePath)
             case PaintChartType::TRIANGLE:
             {
                 cb = new Chart_Triangle(this);
+            }break;
+            case PaintChartType::PARALL:
+            {
+                cb = new Chart_Parall(this);
+            }break;
+            case PaintChartType::USER:
+            {
+                cb = new Chart_User(this);
             }break;
             default:case PaintChartType::NONE:{
                 cb = nullptr;

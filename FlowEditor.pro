@@ -14,11 +14,13 @@ SOURCES += \
     class_Charts/chart_ellipse.cpp \
     class_Charts/chart_label.cpp \
     class_Charts/chart_line.cpp \
+    class_Charts/chart_parall.cpp \
     class_Charts/chart_plaintext.cpp \
     class_Charts/chart_rect.cpp \
     class_Charts/chart_roundrect.cpp \
     class_Charts/chart_trapezoid.cpp \
     class_Charts/chart_triangle.cpp \
+    class_Charts/chart_user.cpp \
     flowchart.cpp \
     main.cpp \
     mainwindow.cpp
@@ -29,11 +31,13 @@ HEADERS += \
     class_Charts/chart_ellipse.h \
     class_Charts/chart_label.h \
     class_Charts/chart_line.h \
+    class_Charts/chart_parall.h \
     class_Charts/chart_plaintext.h \
     class_Charts/chart_rect.h \
     class_Charts/chart_roundrect.h \
     class_Charts/chart_trapezoid.h \
     class_Charts/chart_triangle.h \
+    class_Charts/chart_user.h \
     comdef.h \
     flowchart.h \
     mainwindow.h

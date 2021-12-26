@@ -17,5 +17,7 @@
         <file>img/settings.png</file>
         <file>img/trapezoid.png</file>
         <file>img/triangle.png</file>
+        <file>img/user.png</file>
+        <file>img/parall.png</file>
     </qresource>
 </RCC>
