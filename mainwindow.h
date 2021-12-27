@@ -25,6 +25,8 @@ public slots:
     void sendSelChartLineColor();
     void sendSelChartFillColor();
     void changeWindowTitle(const QString &);
+private slots:
+    void on_actionSetting_triggered();
 };
 
 #endif // MAINWINDOW_H

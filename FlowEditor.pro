@@ -9,7 +9,9 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    aboutdialog.cpp \
     class_Charts/chart_base.cpp \
+    class_Charts/chart_cylinder.cpp \
     class_Charts/chart_diamond.cpp \
     class_Charts/chart_ellipse.cpp \
     class_Charts/chart_hexagon.cpp \
@@ -27,7 +29,9 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    aboutdialog.h \
     class_Charts/chart_base.h \
+    class_Charts/chart_cylinder.h \
     class_Charts/chart_diamond.h \
     class_Charts/chart_ellipse.h \
     class_Charts/chart_hexagon.h \
@@ -45,6 +49,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    aboutdialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.

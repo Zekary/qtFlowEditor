@@ -20,5 +20,8 @@
         <file>img/user.png</file>
         <file>img/parall.png</file>
         <file>img/hexagon.png</file>
+        <file>img/apple-fill.png</file>
+        <file>img/apple.png</file>
+        <file>img/cylinder.png</file>
     </qresource>
 </RCC>

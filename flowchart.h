@@ -29,6 +29,7 @@
 #include "class_Charts/chart_parall.h"
 #include "class_Charts/chart_user.h"
 #include "class_Charts/chart_hexagon.h"
+#include "class_Charts/chart_cylinder.h"
 
 #include "comdef.h"
 
@@ -145,6 +146,7 @@ public slots:
     void setPaintChart_parall(){curPaintChartType = PaintChartType::PARALL;setPaintChart();}            // 获取一个新的平行四边形
     void setPaintChart_user(){curPaintChartType = PaintChartType::USER;setPaintChart();}                // 获取一个新的用户图案
     void setPaintChart_hexagon(){curPaintChartType = PaintChartType::HEXAGON;setPaintChart();}          // 获取一个六边形图案
+    void setPaintChart_cylinder(){curPaintChartType = PaintChartType::CYLINDER;setPaintChart();};       // 获取一个圆柱图案
     void resetPaintChartType(){curPaintChartType = PaintChartType::NONE;}                               // 清空类型
 
 

@@ -8,7 +8,7 @@ enum class MOUSE_EVENT_TYPE {NONE,/*RUNTIME_SELECT,*/CREATING_CNANGE_SIZE,RUNTIM
 enum class ORIENTION{NONE = 0,NORTHWEST = 1,NORTH,NORTHEAST,EAST,SOUTHEAST,SOUTH,SOUTHWEST,WEST,STARTPOINT = 9,ENDPOINT = 10,};
     // 箭头类型             0默认无    1箭头   2实心三角箭头 3空心三角箭头
 enum class LINE_HEAD_TYPE{ARROW0 = 0,ARROW1,ARROW2,ARROW3};
-    // 图形类型             无   矩形  菱形      圆角矩形    圆形  线性  梯形  三角形  平行四边形  用户  六边形
-enum class PaintChartType{NONE,RECT,DIAMOND,ROUNDRECT,ELLIPSE,LINE,TRAPEZOID,TRIANGLE,PARALL,USER,HEXAGON};
+    // 图形类型             无   矩形  菱形      圆角矩形    圆形  线性  梯形  三角形  平行四边形  用户  六边形  圆柱体
+enum class PaintChartType{NONE,RECT,DIAMOND,ROUNDRECT,ELLIPSE,LINE,TRAPEZOID,TRIANGLE,PARALL,USER,HEXAGON,CYLINDER};
 
 #endif // COMDEF_H
